@@ -12,7 +12,7 @@ import lombok.experimental.FieldDefaults;
 @Data
 @Table(name = "chair")
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@PrimaryKeyJoinColumn(name = "chair")
+@PrimaryKeyJoinColumn(name = "furniture_id")
 public class Chair extends Furniture {
 
     String typeOfChair;

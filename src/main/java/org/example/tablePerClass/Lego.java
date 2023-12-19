@@ -9,6 +9,6 @@ import lombok.Data;
 @Data
 public class Lego extends Toy{
 
-    private int countOfDeatils;
+    private int countOfDetails;
 
 }

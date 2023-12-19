@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
 @Entity
-@Table(name = "monster_ear")
+@Table(name = "ear_monster", schema = "lec15")
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class EarMonster extends Monster{

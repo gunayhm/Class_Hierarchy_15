@@ -8,10 +8,10 @@ import lombok.experimental.FieldDefaults;
 
 @Data
 @Entity
-@DiscriminatorValue("S")
+@DiscriminatorValue("4")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Snake extends Animal{
 
-    Integer age;
+    Integer length;
 
 }

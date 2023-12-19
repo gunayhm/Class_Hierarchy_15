@@ -11,7 +11,7 @@ import lombok.experimental.FieldDefaults;
 @Data
 @Table(name = "dinner_table")
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@PrimaryKeyJoinColumn(name = "dinner_table")
+@PrimaryKeyJoinColumn(name = "furniture_id")
 public class DinnerTable extends Furniture{
 
     Integer countOfLegs;

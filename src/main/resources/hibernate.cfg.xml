@@ -16,18 +16,18 @@
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="org.example.mappedSuperClass.Monster"/>
-        <mapping class="org.example.mappedSuperClass.EyeMonster"/>
-        <mapping class="org.example.mappedSuperClass.BaseEntity"/>
-        <mapping class="org.example.mappedSuperClass.EarMonster"/>
+<!--        <mapping class="org.example.mappedSuperClass.Monster"/>-->
+<!--        <mapping class="org.example.mappedSuperClass.EyeMonster"/>-->
+<!--        <mapping class="org.example.mappedSuperClass.BaseEntity"/>-->
+<!--        <mapping class="org.example.mappedSuperClass.EarMonster"/>-->
 
-        <mapping class="org.example.singleTable.Animal"/>
-        <mapping class="org.example.singleTable.Cat"/>
-        <mapping class="org.example.singleTable.Snake"/>
+<!--        <mapping class="org.example.singleTable.Animal"/>-->
+<!--        <mapping class="org.example.singleTable.Cat"/>-->
+<!--        <mapping class="org.example.singleTable.Snake"/>-->
 
-        <mapping class="org.example.joinedTable.Furniture"/>
-        <mapping class="org.example.joinedTable.Chair"/>
-        <mapping class="org.example.joinedTable.DinnerTable"/>
+<!--        <mapping class="org.example.joinedTable.Furniture"/>-->
+<!--        <mapping class="org.example.joinedTable.Chair"/>-->
+<!--        <mapping class="org.example.joinedTable.DinnerTable"/>-->
 
         <mapping class="org.example.tablePerClass.Toy"/>
         <mapping class="org.example.tablePerClass.Lego"/>

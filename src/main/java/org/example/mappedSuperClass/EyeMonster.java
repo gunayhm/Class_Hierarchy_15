@@ -8,10 +8,10 @@ import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
 @Entity
-@Table(name = "monster")
+@Table(name = "eye_monster", schema = "lec15")
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class EyeMonster extends Monster{
+public class EyeMonster extends Monster{ // EyeMonster-->Monster-->BaseEntity
 
     int countOfEyes;
 

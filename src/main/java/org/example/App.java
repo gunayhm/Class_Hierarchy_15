@@ -1,6 +1,5 @@
 package org.example;
 
-import jakarta.persistence.MappedSuperclass;
 import java.util.List;
 import org.example.joinedTable.Chair;
 import org.example.joinedTable.DinnerTable;
@@ -17,27 +16,25 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-public class App
-{
-    public static void main( String[] args )
-    {
-        try(SessionFactory sessionFactory=HibernateUtil.getSessionFactory()){
-            Session session= sessionFactory.openSession();
-            Transaction transaction= session.beginTransaction();
+public class App {
+    public static void main(String[] args) {
+        try (SessionFactory sessionFactory = HibernateUtil.getSessionFactory()) {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
 
 // ---------------MappedSuperclass examples----------------
 
-//            EyeMonster mike=new EyeMonster();
+//            EyeMonster mike = new EyeMonster();
 //            mike.setAge(12);
 //            mike.setName("Mike");
 //            mike.setCountOfEyes(1);
-
-//            EyeMonster nik=new EyeMonster();
+//
+//            EyeMonster nik = new EyeMonster();
 //            nik.setAge(11);
 //            nik.setName("Nik");
 //            nik.setCountOfEyes(3);
 //
-//            EarMonster a=new EarMonster();
+//            EarMonster a = new EarMonster();
 //            a.setAge(1);
 //            a.setName("A");
 //            a.setCountOfEars(3);
@@ -46,9 +43,9 @@ public class App
 //            session.persist(nik);
 //            session.persist(a);
 //
-//            Query<EyeMonster> query=session.createQuery("from EyeMonster ");
-//            List<EyeMonster> eyeMonsterList=query.getResultList();
-//            for(EyeMonster e: eyeMonsterList){
+//            Query<EyeMonster> query = session.createQuery("from EyeMonster ");
+//            List<EyeMonster> eyeMonsterList = query.getResultList();
+//            for (EyeMonster e : eyeMonsterList) {
 //                System.out.println(e);
 //            }
 //
@@ -64,13 +61,15 @@ public class App
 //            cat.setAge(2);
 //
 //            Snake snake=new Snake();
+//            snake.setName("Zmeya");
 //            snake.setAge(5);
+//            snake.setLength(12);
 //
 //            session.persist(animal);
 //            session.persist(cat);
 //            session.persist(snake);
 //
-// ---------------Joined examples----------------
+// ---------------Joined table examples----------------
 
 //            Chair chair=new Chair();
 //            chair.setTypeOfChair("cotton");
@@ -93,13 +92,13 @@ public class App
 
             Lego lego=new Lego();
             lego.setName("mind");
-            lego.setCountOfDeatils(56);
+            lego.setCountOfDetails(56);
 
             session.persist(toy);
             session.persist(doll);
             session.persist(lego);
-
-
+//
+//
             transaction.commit();
         }
     }
